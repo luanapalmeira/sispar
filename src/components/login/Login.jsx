@@ -1,14 +1,13 @@
-import Logo from "../../assets/Tela Login/logo-ws.png"
+import Logo from "../../assets/Tela Login/logo-ws.png";
+import styles from "./Login.module.scss";
 
 function Login() {
     return (
         <>
             <main>
-                <section>
-                    <p>Reservado para a imagem do navio</p>
-                </section>
+                <section className={styles.containerImagemLogin}></section>
 
-                <section>
+                <section className={styles.containerForm}>
                     <img src={Logo} alt="Logo da Wilson Sons" />
                     <h1>Boas vindas ao Novo Porta SISPAR</h1>
                     <p>Sistema de Emissão de Boletos e Parcelamento</p>
@@ -20,8 +19,8 @@ function Login() {
                         <a href="">Esqueci minha senha</a>
 
                         <div>
-                            <button>Entrar</button>
-                            <button>Criar conta</button>
+                            <button className={styles.botaoEntrar}>Entrar</button>
+                            <button className={styles.botaoCriar}>Criar conta</button>
                         </div>
                     </form>
                 </section>
