@@ -1,0 +1,35 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 7vw;
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+.containerReembolso {
+    display: flex;
+    flex-direction: column;
+
+    .containerCards {
+        border: solid blue;
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+    }
+
+    .card {
+        width: 20vw;
+        height: 20vh;
+        border: solid red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
