@@ -19,25 +19,58 @@ function Reembolsos() {
                 <p>Reembolsos</p>
             </header>
 
-            <main className={styles.containerReembolso}>
-                <h1>Sistema de Reembolsos</h1>
-                <p>Solicite novos pedidos de reembolso, visualize solicitações em análise e todo o histórico.</p>
+            <main className={styles.mainReembolso}>
+                <section className={styles.centralizar}>
+                    <h1>Sistema de Reembolsos</h1>
+                    <p>Solicite novos pedidos de reembolso, visualize solicitações em análise e todo o histórico.</p>
 
-                <section className={styles.containerCards}>
-                    <article className={styles.card}>
-                        <img src={SolicitarReembolso} alt="ícone de uma prancheta com um sinal de somar" />
-                        <p>Solicitar Reembolso</p>
-                    </article>
+                    <section className={styles.containerCards}>
+                        <article className={styles.card}>
+                            <img src={SolicitarReembolso} alt="ícone de uma prancheta com um sinal de somar ao lado" />
+                            <p>Solicitar Reembolso</p>
+                        </article>
 
-                    <article className={styles.card}>
-                        <img src={Analises} alt="ícone de uma lista" />
-                        <p>Verificar análises</p>
-                    </article>
+                        <article className={styles.card}>
+                            <img src={Analises} alt="ícone de uma lista" />
+                            <p>Verificar análises</p>
+                        </article>
 
-                    <article className={styles.card}>
-                        <img src={SolicitarHistorico} alt="ícone de um relógio" />
-                        <p>Histórico</p>
-                    </article>
+                        <article className={styles.card}>
+                            <img src={SolicitarHistorico} alt="ícone de um relógio em formato de seta de recarregamento" />
+                            <p>Histórico</p>
+                        </article>
+                    </section>
+
+                    <section className={styles.containerStatus}>
+                        <div>
+                            <img className={styles.img1} src={NumeroSolicitados} alt="ícone de seta para a esquerda" />
+                            <h2>182</h2>
+                            <p>Solicitados</p>
+                        </div>
+
+                        <div>
+                            <img className={styles.img2} src={NumeroAnalises} alt="ícone de relógio" />
+                            <h2>74</h2>
+                            <p>Em análise</p>
+                        </div>
+
+                        <div>
+                            <img className={styles.img3} src={NumeroAprovados} alt="ícone de verificado com uma barra embaixo" />
+                            <h2>195</h2>
+                            <p>Aprovados</p>
+                        </div>
+
+                        <div>
+                            <img className={styles.img4} src={NumeroRejeitados} alt="ícone de x" />
+                            <h2>41</h2>
+                            <p>Rejeitados</p>
+                        </div>
+                    </section>
+
+                    <section className={styles.containerSistema}>
+                        <img src={Sistema} alt="ícone de nuvem com um sinal de verificado dentro" />
+                        <p>Sistema atualizado.</p>
+                    </section>
                 </section>
             </main>
         </>

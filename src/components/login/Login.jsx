@@ -11,7 +11,7 @@ function Login() {
 
     return (
         <>
-            <main className={styles.divisaoDeContainers}>
+            <main className={styles.mainLogin}>
                 <section className={styles.containerImagemLogin}></section>
 
                 <section className={styles.containerForm}>

@@ -1,35 +1,141 @@
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    width: 7vw;
+    width: 10%;
+    height: 5vh;
 
     p {
-        font-size: 1rem;
+        font-size: 0.8rem;
+        font-family: "Inter";
     }
 }
 
-.containerReembolso {
-    display: flex;
-    flex-direction: column;
+.mainReembolso {
+    height: 95vh;
+    font-family: "Inter";
 
-    .containerCards {
-        border: solid blue;
-        display: flex;
-        justify-content: space-between;
-        width: 60%;
-    }
-
-    .card {
-        width: 20vw;
-        height: 20vh;
-        border: solid red;
+    .centralizar {
+        width: 100%;
+        height: 94vh;
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
+        padding-left: 30rem;
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #000000;
+        }
+
+        p {
+            font-size: 1rem;
+            font-weight: 400;
+            color: #000000;
+        }
+
+        .containerCards {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 65%;
+            height: 26vh;
+
+            .card {
+                width: 15vw;
+                height: 20vh;
+                border: 0.8px solid #CBD4E1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                border-radius: 6px;
+
+                img {
+                    width: 12%;
+                }
+
+                p {
+                    font-size: 1.313rem;
+                    font-weight: 700;
+                    color: #000000;
+                    padding-top: 1rem;
+                }
+            }
+        }
+
+        .containerStatus {
+            width: 65%;
+            height: 11vh;
+            border: 0.8px solid #CBD4E1;
+            border-radius: 6px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            div {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 18%;
+                height: 8vh;
+
+                .img1 {
+                    background-color: #00BEDD;
+                    border-radius: 6px;
+                    padding: 6px;
+
+                }
+
+                .img2 {
+                    background-color: #E56700;
+                    border-radius: 6px;
+                    padding: 6px;
+                }
+
+                .img3 {
+                    background-color: #007A6A;
+                    border-radius: 6px;
+                    padding: 6px;
+                }
+
+                .img4 {
+                    background-color: #A60B2F;
+                    border-radius: 6px;
+                    padding: 6px;
+                }
+
+                h2 {
+                    font-size: 1rem;
+                    font-weight: 700;
+                    color: #000000;
+                }
+
+                p {
+                    font-size: 1rem;
+                    font-weight: 400;
+                    color: #000000;
+                }
+            }
+        }
+
+        .containerSistema {
+            display: flex;
+            width: 13%;
+            justify-content: space-between;
+            margin-top: 1.5rem;
+
+            img {
+                width: 14%;
+            }
+
+            p {
+                font-size: 1rem;
+                font-weight: 400;
+                color: #0844C4;
+            }
+        }
+
     }
 }
-
-
-
