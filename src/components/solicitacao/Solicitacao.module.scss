@@ -1,0 +1,102 @@
+.layoutSolicitacao {
+    display: flex;
+
+    .containerPrincipalDaSolicitacao {
+        width: 95vw;
+
+        .headerSolicitacao {
+            display: flex;
+            width: 20vw;
+        }
+
+        .mainSolicitacao {
+            width: 100%;
+
+            .formSolicitacao {
+                display: flex;
+                justify-content: space-between;
+
+                //Estilização do Grupo 1
+                .grupo1 {
+                    width: 40%;
+                    height: 25vh;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-wrap: wrap;
+
+                    label {
+                        font-weight: 700;
+                        font-size: 1.18rem;
+                        font-family: "Inter";
+                        color: #23282F;
+                    }
+
+                    input, select, textarea{
+                        border-radius: 6px;
+                        border: solid #CBD4E1 0.8px;
+                        height: 3vh;
+                        width: 100%;
+                    }
+
+                    .inputNome {
+                        width: 45%;
+                    }
+
+                    .inputEmpresa {
+                        width: 25%;
+                    }
+
+                    .inputPrestacao {
+                        width: 25%;
+                    }
+
+                    .inputMotivo {
+                        width: 100%;
+
+                        textarea {
+                            height: 10vh;
+                        }
+                    }
+                }
+
+                //Estilização da Barra Vertical
+                .barraVertical {
+                    background-color: #CBD4E1;
+                    height: 25vh;
+                    width: 0.1vw;
+                }
+
+                //Estilização do Grupo 2
+                .grupo2 {
+                    border: solid blue;
+                    width: 55%;
+
+                    label {
+                        font-weight: 700;
+                        font-size: 1.18rem;
+                        font-family: "Inter";
+                        color: #23282F;
+                    }
+
+                    input, select, textarea{
+                        border-radius: 6px;
+                        border: 0.8px solid #CBD4E1;
+                        height: 3vh;
+                        width: 100%;
+                    }
+
+                    .inputData {
+                        width: 20%;
+                        border: solid red;
+                    }
+    
+                    .despesas {
+                        width: 30%;
+                        border: solid yellow;
+                    }
+                } 
+            }
+        }
+    }
+}
