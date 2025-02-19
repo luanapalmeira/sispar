@@ -9,10 +9,13 @@ import NumeroSolicitados from "../../assets/Dashboard/N-Solicitados.png";
 import Sistema from "../../assets/Dashboard/Sistema-atualizado.png";
 import SolicitarHistorico from "../../assets/Dashboard/Solicitar - Histórico.png";
 import SolicitarReembolso from "../../assets/Dashboard/Solicitar - Reembolso.png";
+import NavBar from "../navbar/Navbar.jsx";
 
 function Reembolsos() {
     return (
-        <>
+        <div className={styles.containerReembolsos}>
+            <NavBar />
+            
             <header>
                 <img src={Home} alt="ícone de casinha" />
                 <img src={Seta} alt="ícone de sinal de maior" />
@@ -73,7 +76,7 @@ function Reembolsos() {
                     </section>
                 </section>
             </main>
-        </>
+        </div>
     );
 }
 
