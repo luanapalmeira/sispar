@@ -18,26 +18,48 @@
 
                 //Estilização do Grupo 1
                 .grupo1 {
-                    width: 40%;
+                    width: 35%;
                     height: 25vh;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
                     flex-wrap: wrap;
+                    margin-left: 1rem;
 
                     label {
                         font-weight: 700;
-                        font-size: 1.18rem;
+                        font-size: 1rem;
                         font-family: "Inter";
                         color: #23282F;
                     }
 
-                    input, select, textarea{
+                    input,
+                    select,
+                    textarea {
                         border-radius: 6px;
                         border: solid #CBD4E1 0.8px;
-                        height: 3vh;
+                        height: 4vh;
                         width: 100%;
                     }
+
+                    input:hover {
+                        border: 0.8px solid #23282F;
+                    }
+
+                    input:focus {
+                        border: 0.8px solid #23282F;
+                        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    }
+
+                    textarea:hover {
+                        border: 0.8px solid #23282F;
+                    }
+
+                    textarea:focus {
+                        border: 0.8px solid #23282F;
+                        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    }
+
 
                     .inputNome {
                         width: 45%;
@@ -53,9 +75,10 @@
 
                     .inputMotivo {
                         width: 100%;
+                        margin-bottom: 1.5rem;
 
                         textarea {
-                            height: 10vh;
+                            height: 6vh;
                         }
                     }
                 }
@@ -63,39 +86,290 @@
                 //Estilização da Barra Vertical
                 .barraVertical {
                     background-color: #CBD4E1;
-                    height: 25vh;
+                    height: 20vh;
                     width: 0.1vw;
                 }
 
                 //Estilização do Grupo 2
                 .grupo2 {
-                    border: solid blue;
-                    width: 55%;
+                    width: 60%;
+                    height: 25vh;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    margin-right: 1rem;
 
                     label {
                         font-weight: 700;
-                        font-size: 1.18rem;
+                        font-size: 1rem;
                         font-family: "Inter";
                         color: #23282F;
                     }
 
-                    input, select, textarea{
+                    input,
+                    select,
+                    textarea {
                         border-radius: 6px;
                         border: 0.8px solid #CBD4E1;
-                        height: 3vh;
+                        height: 4vh;
                         width: 100%;
                     }
 
+                    input:hover {
+                        border: 0.8px solid #23282F;
+                    }
+
+                    input:focus {
+                        border: 0.8px solid #23282F;
+                        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    }
+
+                    select option {
+                        font-family: "Inter";
+                        color: #23282F;
+                    }
+
+                    select:hover {
+                        border: 0.8px solid #23282F;
+                    }
+
+                    select:focus {
+                        border: 0.8px solid #23282F;
+                        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    }
+
+                    // select {
+                    //     appearance: none;
+                    //     -webkit-appearance: none;
+                    //     -moz-appearance: none;
+                    //     background-image: url('../../assets/Solicitação/seta\ baixa.png');
+                    //     background-repeat: no-repeat;
+                    //     background-position: right 10px center;
+                    //     padding-right: 30px;
+                    // }
+
                     .inputData {
                         width: 20%;
-                        border: solid red;
                     }
-    
-                    .despesas {
+
+                    // .customDate {
+                    //     -webkit-appearance: none;
+                    //     -moz-appearance: none;
+                    //     appearance: none;
+                    //     background-image: url('../../assets/Solicitação/calendario.png');
+                    //     background-repeat: no-repeat;
+                    //     background-position: right 10px center;
+                    //     background-color: #001A3D;
+                    //     padding-right: 30px;
+                    // }
+
+                    .tipoDeDespesas {
                         width: 30%;
-                        border: solid yellow;
                     }
-                } 
+
+                    .centroDeCusto {
+                        width: 47%;
+                    }
+
+                    .inputData,
+                    .tipoDeDespesas,
+                    .centroDeCusto {
+                        padding-top: 1rem;
+                    }
+
+                    .ordem,
+                    .divisoes,
+                    .pep,
+                    .distancia {
+                        width: 8%;
+                    }
+
+                    .moeda,
+                    .valorKm,
+                    .valorFaturado,
+                    .despesa {
+                        width: 11%;
+                    }
+
+                    .botoes {
+                        width: 15%;
+                        display: flex;
+                        justify-content: space-evenly;
+                        padding-top: 1.2rem;
+
+                        .botaoSalvar {
+                            font-size: 0.9rem;
+                            font-weight: 700;
+                            font-family: "Inter";
+                            background-color: #001A3D;
+                            color: #FFFFFF;
+                            width: 5vw;
+                            cursor: pointer;
+                            display: flex;
+                            justify-content: space-evenly;
+                            align-items: center;
+
+                            img {
+                                width: 13%;
+                            }
+                        }
+
+                        .botaoSalvar:hover {
+                            background-color: #012049;
+                        }
+            
+                        .botaoDeletar {
+                            background-color: #00BEDD;
+                            width: 2vw;
+                            cursor: pointer;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            img {
+                                width: 35%;
+                                height: 35%;
+                            }
+                        }
+
+                        .botaoDeletar:hover {
+                            background-color: #00acc7;
+                        }
+                    }
+                }
+            }
+
+            // Estilização da tabela
+            .tabelaContainer {
+                border: 0.8px solid #CBD4E1;
+                width: 98%;
+                height: 56vh;
+                margin-left: 1rem;
+
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    table-layout: fixed;
+
+                    th {
+                        font-weight: 400;
+                        color: #23282F;
+                        background-color: #edeef0;
+                    }
+
+                    td {
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+
+                    th,
+                    td {
+                        border: 0.8px solid #CBD4E1;
+                        text-align: center;
+                        font-family: "Inter";
+                        font-size: 0.8rem;
+                    }
+
+                    tr {
+                        height: 5vh;
+                    }
+                }
+            }
+
+            .rodape {
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                gap: 10px;
+                align-items: center;
+                margin-top: 1.5rem;
+
+                label {
+                    font-weight: 700;
+                    font-size: 1rem;
+                    font-family: "Inter";
+                    color: #23282F;
+                }
+
+                input {
+                    border-radius: 6px;
+                    border: 0.8px solid #CBD4E1;
+                    height: 4vh;
+                    width: 100%;
+                }
+
+                input:hover {
+                    border: 0.8px solid #23282F;
+                }
+
+                input:focus {
+                    border: 0.8px solid #23282F;
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                }
+
+                .totalFaturado, .totalDespesa {
+                    width: 7%;
+                }
+
+                .placeholder1, .placeholder2::placeholder {
+                    font-size: 1rem;
+                    font-family: "Inter";
+                    font-weight: 400;
+                    color:#898D93;
+                    padding-left: 0.7rem;
+                }
+
+                .botoesRodape {
+                    width: 20%;
+                    display: flex;
+                    justify-content: space-evenly;
+                    padding-top: 1rem;
+
+                    .enviarAnalise, .cancelarSolicitacao {
+                        width: 45%;
+                    }
+
+                    .enviarAnalise {
+                        background-color: #001A3D;
+                        color:#FFFFFF;
+                        font-family: "Inter";
+                        font-size: 0.8rem;
+                        font-weight: 700;
+                        cursor: pointer;
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+
+                        img {
+                            width: 10%;
+                        }
+                    }
+
+                    .enviarAnalise:hover {
+                        background-color: #012049;
+                    }
+
+                    .cancelarSolicitacao {
+                        background-color:#A60B2F;
+                        color:#FFFFFF;
+                        font-family: "Inter";
+                        font-size: 0.8rem;
+                        font-weight: 700;
+                        cursor: pointer;
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+
+                        img {
+                            width: 8%;
+                        }
+                    }
+
+                    .cancelarSolicitacao:hover {
+                        background-color: #920829;
+                    }
+                }
             }
         }
     }
