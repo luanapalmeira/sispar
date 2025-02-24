@@ -52,12 +52,12 @@ function Solicitacao() {
                         <div className={styles.grupo2}>
                             <div className={styles.inputData}>
                                 <label htmlFor="">Data</label>
-                                <input type="date" name="date" id="date"/>
+                                <input type="date" name="date" id="date" className={styles.customDate}/>
                             </div>
 
                             <div className={styles.tipoDeDespesas}>
                                 <label htmlFor="">Tipo de Despesa</label>
-                                <select name="" id="" className={styles.select1}>
+                                <select name="" id="">
                                     <option value="0" disabled selected>Selecionar</option>
                                     <option value="1">Alimentação</option>
                                     <option value="2">Combustível</option>

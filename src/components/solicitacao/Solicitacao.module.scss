@@ -138,37 +138,43 @@
                         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                     }
 
-                    // select {
-                    //     appearance: none;
-                    //     -webkit-appearance: none;
-                    //     -moz-appearance: none;
-                    //     background-image: url('../../assets/Solicitação/seta\ baixa.png');
-                    //     background-repeat: no-repeat;
-                    //     background-position: right 10px center;
-                    //     padding-right: 30px;
-                    // }
-
                     .inputData {
                         width: 20%;
                     }
 
-                    // .customDate {
-                    //     -webkit-appearance: none;
-                    //     -moz-appearance: none;
-                    //     appearance: none;
-                    //     background-image: url('../../assets/Solicitação/calendario.png');
-                    //     background-repeat: no-repeat;
-                    //     background-position: right 10px center;
-                    //     background-color: #001A3D;
-                    //     padding-right: 30px;
-                    // }
+                    .customDate {
+                        appearance: none;
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        background-image: url('../../assets/Solicitação/calendario.png'), linear-gradient(to right, #FFFFFF 75%, #001A3D 25%);
+                        background-repeat: no-repeat;
+                        background-position: right center;
+                    }
 
                     .tipoDeDespesas {
                         width: 30%;
                     }
 
+                    .tipoDeDespesas select {
+                        appearance: none;
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        background-image: url('../../assets/Solicitação/seta\ baixa.png'), linear-gradient(to right, #FFFFFF 85%, #001A3D 15%);
+                        background-repeat: no-repeat;
+                        background-position: right center;
+                    }
+
                     .centroDeCusto {
                         width: 47%;
+                    }
+
+                    .centroDeCusto select {
+                        appearance: none;
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        background-image: url('../../assets/Solicitação/seta\ baixa.png'), linear-gradient(to right, #FFFFFF 90%, #001A3D 10%);
+                        background-repeat: no-repeat;
+                        background-position: right center;
                     }
 
                     .inputData,
@@ -189,6 +195,15 @@
                     .valorFaturado,
                     .despesa {
                         width: 11%;
+                    }
+
+                    .moeda select {
+                        appearance: none;
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        background-image: url('../../assets/Solicitação/seta\ baixa.png'), linear-gradient(to right, #FFFFFF 65%, #001A3D 35%);
+                        background-repeat: no-repeat;
+                        background-position: right center;
                     }
 
                     .botoes {
@@ -217,7 +232,7 @@
                         .botaoSalvar:hover {
                             background-color: #012049;
                         }
-            
+
                         .botaoDeletar {
                             background-color: #00BEDD;
                             width: 2vw;
@@ -242,6 +257,7 @@
             // Estilização da tabela
             .tabelaContainer {
                 border: 0.8px solid #CBD4E1;
+                border-radius: 6px;
                 width: 98%;
                 height: 56vh;
                 margin-left: 1rem;
@@ -308,15 +324,17 @@
                     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                 }
 
-                .totalFaturado, .totalDespesa {
+                .totalFaturado,
+                .totalDespesa {
                     width: 7%;
                 }
 
-                .placeholder1, .placeholder2::placeholder {
+                .placeholder1,
+                .placeholder2::placeholder {
                     font-size: 1rem;
                     font-family: "Inter";
                     font-weight: 400;
-                    color:#898D93;
+                    color: #898D93;
                     padding-left: 0.7rem;
                 }
 
@@ -326,13 +344,14 @@
                     justify-content: space-evenly;
                     padding-top: 1rem;
 
-                    .enviarAnalise, .cancelarSolicitacao {
+                    .enviarAnalise,
+                    .cancelarSolicitacao {
                         width: 45%;
                     }
 
                     .enviarAnalise {
                         background-color: #001A3D;
-                        color:#FFFFFF;
+                        color: #FFFFFF;
                         font-family: "Inter";
                         font-size: 0.8rem;
                         font-weight: 700;
@@ -351,8 +370,8 @@
                     }
 
                     .cancelarSolicitacao {
-                        background-color:#A60B2F;
-                        color:#FFFFFF;
+                        background-color: #A60B2F;
+                        color: #FFFFFF;
                         font-family: "Inter";
                         font-size: 0.8rem;
                         font-weight: 700;
